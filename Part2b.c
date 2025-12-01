@@ -77,15 +77,15 @@ void markingProcess(int id, struct SharedMemory *data, int semid_rubric, int sem
 
 int main(int argc, char *argv[]) {
     if (argc < 3) {  //must have n >=2 processes running concurrently 
-        printf("Not enough TAs n >=2 processe required");
+        printf("Not enough TAs n >=2 processe required\n");
         return 1;
     }
 
-    int numTAs = atoi(argv[1]);
-    int totalExams = atoi(argv[2]);
-    if (numTAs < 2) numTAs = 2;
+    int numTAs = atoi(argv[1]);  //convert number of TAs to int
+    int totalExams = atoi(argv[2]); //convert number of exams to int
+    if (numTAs < 2) numTAs = 2;  //if less than 2 TAs for to be 2
 
-    // create shared memory
+    // shared memory
     int shmid = shmget(IPC_PRIVATE, sizeof(struct SharedMemory), IPC_CREAT | 0666);
     if (shmid == -1) { 
         perror("shmget"); 
@@ -117,12 +117,11 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // wait for all TAs
+    //wait for all proceses(TAs)
     for (int i = 0; i < numTAs; i++) {
         wait(NULL);
     }
 
-    // cleanup
     shmdt(data);
     shmctl(shmid, IPC_RMID, NULL);
     semctl(semid_rubric, 0, IPC_RMID);

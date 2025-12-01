@@ -95,7 +95,7 @@ int main(int argc, char *argv[]) {
     //atoi converts ASCII to integr
     int numTAs = atoi(argv[1]);     //convert number of TAs to int
     int numExams = atoi(argv[2]); //convert number of exams to int
-    if (numTAs < 2) numTAs = 2;
+    if (numTAs < 2) numTAs = 2;   //if less than 2 TAs for to be 2
 
     // Disable stdout buffering
     setbuf(stdout, NULL);
