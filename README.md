@@ -3,7 +3,7 @@
 **Compiling Part 2a:**
 
 
-gcc Part2a.c -o part2a
+gcc Part2a.c -o <output_file>
 
 **Running Part 2a:**
 
@@ -13,7 +13,7 @@ gcc Part2a.c -o part2a
 **Compiling Part B:**
 
 
-gcc Part2b.c -o part2b
+gcc Part2b.c -o <output_file>
 
 **Running Part 2b:**
 
