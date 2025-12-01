@@ -3,22 +3,30 @@
 **Compiling Part 2a:**
 
 
-gcc Part2a.c -o part2a
+gcc Part2a.c -o <output_file>
+
+ex: gcc Part2a.c -o ./part2a
 
 **Running Part 2a:**
 
 
 ./part2a <number_of_TAs> <number_of_exams>
 
+ex: ./part2a 3 20 
+
 **Compiling Part B:**
 
 
-gcc Part2b.c -o part2b
+gcc Part2b.c -o <output_file>
+
+ex: gcc Part2b.c -o ./part2b
 
 **Running Part 2b:**
 
 
 ./part2b <number_of_TAs> <number_of_exams>
+
+ex: ./part2b 3 20 
 
 **Test cases for Part 2a:**
 
@@ -26,7 +34,7 @@ gcc Part2b.c -o part2b
 
 ./part2a.1 2 5      -> minimum valid case
 
-./part2a.2 3 10    -> Adding more exams
+./part2a.2 3 10    -> 10 exams
 
 ./part2a.3 4 5      -> Adding more TAs
 
@@ -41,7 +49,7 @@ gcc Part2b.c -o part2b
 
 ./part2b.1 2 5      -> minimum valid case
 
-./part2b.2 3 10    -> Adding more exams
+./part2b.2 3 10    -> 10 exams
 
 ./part2b.3 4 5      -> Adding more TAs
 
