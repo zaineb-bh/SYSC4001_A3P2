@@ -28,7 +28,7 @@ int sem_post_op(int semid) {
 }
 
 void markingProcess(int id, struct SharedMemory *data, int semid_rubric, int semid_exam) {
-    srand(time(NULL) + id); 
+    srand(time(NULL) ^ getpid()); 
 
     while (1) {
         sem_wait_op(semid_exam);
@@ -83,8 +83,9 @@ int main(int argc, char *argv[]) {
 
     int numTAs = atoi(argv[1]);  //convert number of TAs to int
     int totalExams = atoi(argv[2]); //convert number of exams to int
-    if (numTAs < 2) numTAs = 2;  //if less than 2 TAs for to be 2
-
+    if (numTAs < 2) {
+        numTAs = 2;  //if less than 2 TAs for to be 2
+    } 
     // shared memory
     int shmid = shmget(IPC_PRIVATE, sizeof(struct SharedMemory), IPC_CREAT | 0666);
     if (shmid == -1) { 
