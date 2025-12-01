@@ -1,22 +1,19 @@
 # SYSC4001_A3P2
 
-Compiling Part 2a:
-
+**Compiling Part 2a:**
 gcc Part2a.c -o part2a
 
-Running Part 2a:
-
+**Running Part 2a:**
 ./part2a <number_of_TAs> <number_of_exams>
 
-Compiling Part B:
-
+**Compiling Part B:**
 gcc Part2b.c -o part2b
 
-Running Part 2b:
+**Running Part 2b:**
 
 ./part2b <number_of_TAs> <number_of_exams>
 
-Test cases for Part 2a:
+**Test cases for Part 2a:**
 ./part2a.1 2 5      # minimum valid case
 
 ./part2a.2 3 10    # more exams
@@ -28,7 +25,7 @@ Test cases for Part 2a:
 ./part2a.5           # no number of processes/TAs passed, error
 
 
-Test cases for Part 2b:
+**Test cases for Part 2b:**
 
 ./part2b 2 5      # minimum valid case
 
