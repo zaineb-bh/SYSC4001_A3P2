@@ -34,7 +34,7 @@ ex: ./part2b 3 20
 
 ./part2a.1 2 5      -> minimum valid case
 
-./part2a.2 3 10    -> Adding more exams
+./part2a.2 3 10    -> 10 exams
 
 ./part2a.3 4 5      -> Adding more TAs
 
@@ -49,7 +49,7 @@ ex: ./part2b 3 20
 
 ./part2b.1 2 5      -> minimum valid case
 
-./part2b.2 3 10    -> Adding more exams
+./part2b.2 3 10    -> 10 exams
 
 ./part2b.3 4 5      -> Adding more TAs
 
