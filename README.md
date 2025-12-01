@@ -5,20 +5,28 @@
 
 gcc Part2a.c -o <output_file>
 
+ex: gcc Part2a.c -o ./part2a
+
 **Running Part 2a:**
 
 
 ./part2a <number_of_TAs> <number_of_exams>
+
+ex: ./part2a 3 20 
 
 **Compiling Part B:**
 
 
 gcc Part2b.c -o <output_file>
 
+ex: gcc Part2b.c -o ./part2b
+
 **Running Part 2b:**
 
 
 ./part2b <number_of_TAs> <number_of_exams>
+
+ex: ./part2b 3 20 
 
 **Test cases for Part 2a:**
 
